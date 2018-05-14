@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <link rel="stylesheet" type="text/css" href="reset.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+    <meta charset="utf-8">
+    <title>EGGY: A WAY OF LIFE</title>
+  </head>
+    <body bgcolor="F2F2F2">
+    <header>
+      <a href="index.html"><img class="logo" src="img/logo.png" alt="EGGY"></a>
+      <nav class="nav">
+
+        <ul>
+          <li class="active"><a href="eggy.html">eggy</a></li>
+          <li><a href="stories.html">stories</a></li>
+          <li><a href="videos.html">videos</a></li>
+          <li><a href="shop.html">shop</a></li>
+        </ul>
+      </nav>
+      
+      <div class="box">
+       <div class="container-1">
+       <span class="icon"><i class="fa fa-search"></i></span>
+       <input type="search" id="search" placeholder="search" />
+      </div>
+
+    
+     <div id="mySidenav" class="sidenav">
+ 	    <img style="margin-left: 10px;
+ 	   margin-bottom: 20px;" src="img/logo.png" alt="EGGY">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">recepies</a>
+      <a href="#">beauty</a>
+      <a href="#">lifestyle</a>
+      <a href="#">egg-ing</a>
+     </div>
+
+     <span style=" position: absolute; margin-left: 20px; margin-top: -32px; color: white; cursor:pointer" onclick="openNav()">&#9776;</span>
+    
+     <script>
+       function openNav() {
+       document.getElementById("mySidenav").style.width = "250px";
+       }
+       function closeNav() {
+       document.getElementById("mySidenav").style.width = "0";
+       }
+     </script>
+      <div class="slideshow-container">
+
+       <div class="mySlides fade">
+        <div class="category">RECIPES • TRENDING</div>
+        <img src="img/recipe.jpg" style="width:1440px;">
+       <div class="text"><a href="bfastbowl.html">EXTRA EGGY <br> KALE & COUSCOUS BREAKFAST BOWL</a></div>
+     </div>
+
+     <div class="mySlides fade">
+       <div class="category">BEAUTY • MOST VIEWED TODAY</div>
+       <img src="img/beauty.jpg" style="width:1440px;">
+       <div class="text"><a href="beautyway.html">7 BEAUTY WAYS<br>TO USE AN EGG</a></div>
+     </div>
+
+     <div class="mySlides fade">
+       <img src="img/egging.jpg" style="width:1440px;">
+       <div class="category">EGG-ING • TRENDING</div>
+       <div class="text"><a href="eggslut.html">EGGSLUT: <br>THE NEW PLACE TO EGGY AROUND</a></div>
+     </div>
+
+
+     <br>
+
+     <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+     </div>
+
+     <script>
+       var slideIndex = 0;
+       showSlides();
+
+       function showSlides() {
+       var i;
+       var slides = document.getElementsByClassName("mySlides");
+       var dots = document.getElementsByClassName("dot");
+       for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+       }
+       slideIndex++;
+       if (slideIndex > slides.length) {slideIndex = 1}    
+       for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+       }
+       slides[slideIndex-1].style.display = "block";  
+       dots[slideIndex-1].className += " active";
+       setTimeout(showSlides, 5000); 
+       }
+     </script>
+     <div class="toptitle">today's top stories</div>
+
+     <div class="wrapper">
+
+       <div>
+          <br>
+          <img src="img/hbenefits.jpg">
+          <h1 style="line-height: 1px;"><a href="">the health benefits of eggs</a></h1>
+          <p> all good things an egg can offer you </p>
+       </div>
+
+       <div>
+         <img src="img/eggmask.jpg">
+         <h1 style="line-height: 1px;"><a href="">the perfect eggmask</a></h1> 
+          <p> glowy skin? this is the perfect face mask for you</p>
+       </div>
+
+       <div>
+        <img src="img/eggyolk.jpg">
+        <h1 style="line-height: 1px;"><a href="">is drinking eggs good?</a></h1> 
+         <p> take a look at these doctors opinion </p>
+       </div>
+      </div>
+
+      <div class="paragraph">
+
+
+       <div>
+         <img src="img/eggfocaccia.jpg">
+         <h1 style="line-height: 1px;"><a href="">egg focaccia: to die for</a></h1> 
+         <p> the best egg foaccia recipe for any ocassion </p>
+       </div>
+
+       <div>
+           <img src="img/favspot.jpg">
+         <h1 style="line-height: 1px;"><a href="">our new favorite eggy spot</a></h1> 
+         <p> find out all about the fanciest egg restaurant </p>
+       </div>
+
+       <div>
+         <img src="img/bfast.jpg">
+         <h1 style="line-height: 1px;"><a href="">eggs in bed</a></h1> 
+         <p> eggs that you can share with your significant other in bed </p>
+       </div>
+      
+     </div>
+      <div class="footer">
+         <p>&copy; 2018 EGGY BY JUAN MANUEL</p>
+       </div>
+  </header>
+  </body>
+</html>

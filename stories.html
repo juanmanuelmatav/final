@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="reset.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+    <meta charset="utf-8">
+  <title>ABOUT US</title>
+</head>
+<body bgcolor="#F2F2F2">
+<body>
+  <header class="header">
+    <a href="index.html"><img class="logo" src="img/logo.png" alt="EGGY"></a>
+      <nav class="nav">
+
+        <ul>
+          <li class="active"><a href="eggy.html">eggy</a></li>
+          <li><a href="stories.html">stories</a></li>
+          <li><a href="videos.html">videos</a></li>
+          <li><a href="shop.html">shop</a></li>
+        </ul>
+      </nav>
+    
+     <div id="mySidenav" class="sidenav">
+      <img style="margin-left: 10px;
+     margin-bottom: 20px;" src="img/logo.png" alt="EGGY">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">recipes</a>
+      <a href="#">beauty</a>
+      <a href="#">lifestyle</a>
+      <a href="#">egg-ing</a>
+     </div>
+
+     <span style=" position: absolute; margin-left: 20px; margin-top: -30px; color: white; cursor:pointer" onclick="openNav()">&#9776;</span>
+    
+     <script>
+       function openNav() {
+       document.getElementById("mySidenav").style.width = "250px";
+       }
+       function closeNav() {
+       document.getElementById("mySidenav").style.width = "0";
+       }
+     </script>
+    <h1 style="margin-top: 90px;" class="h">eggy</h1>
+    <h5 class="hvv">CATEGORIES</h5>
+  </header>
+  <div class="wrapperc">
+
+  <div>
+    <img src="img/eggfocaccia.jpg" alt="eggfocaccia">
+    <a href=""><p class="main">recipes</p></a>
+    <p class="text">the best recipes rich in egg</p>
+    
+  </div>
+
+  <div>
+    <img src="img/eggmask.jpg" alt="eggmask">
+     <a href=""><p class="main">beauty</p></a>
+    <p class="text">egg beauty essentials</p>
+    
+  </div>
+
+   <div>
+    <img src="img/eggyolk.jpg" alt="lifestyle">
+     <a href=""><p class="main">lifestyle</p></a>
+    <p class="text">living on the egg</p>
+    
+   </div>
+  
+    <div>
+    <img src="img/bfast.jpg" alt="egging">
+    <a href=""><p class="main">egg-ing</p></a>
+    <p class="text">cool finds by us</p>
+   </div>
+ </div>
+</body>
+</html>
+
+
